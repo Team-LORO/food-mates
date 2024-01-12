@@ -1,12 +1,24 @@
 package com.foodmate.feature.auth
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import com.foodmate.R
+import androidx.appcompat.app.AppCompatActivity
+import com.foodmate.databinding.ActivityInitialBinding
 
 class InitialActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityInitialBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_initial)
+        binding = ActivityInitialBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.btnAuthMitra.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        binding.btnAuthUser.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 }

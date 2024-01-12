@@ -1,24 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="ButtonSecondary">
+    <style name="ButtonSecondary" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:height">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FE7300</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/primary_button</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:height">52dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="OptionSecondary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/secondary_option</item>
         <item name="android:drawableTop">@drawable/ic_store</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:padding">12dp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">#FE7300</item>
         <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">@null</item>
     </style>
 
-    <style name="ButtonPrimary">
-        <item name="android:background">@drawable/primary_button</item>
+    <style name="OptionPrimary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/primary_option</item>
         <item name="android:drawableTop">@drawable/ic_basket</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:padding">12dp</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">@null</item>
     </style>
 
     <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">

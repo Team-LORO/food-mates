@@ -24,9 +24,11 @@
         </activity>
         <!--=== Authentication Features ===-->
         <activity
+            android:theme="@style/AppFullScreenTheme"
             android:name=".feature.auth.RegistrationActivity"
             android:exported="false" />
         <activity
+            android:theme="@style/AppFullScreenTheme"
             android:name=".feature.auth.LoginActivity"
             android:exported="false" />
 
