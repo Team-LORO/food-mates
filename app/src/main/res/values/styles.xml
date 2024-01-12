@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonSecondary">
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:drawableTop">@drawable/ic_store</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">#FE7300</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ButtonPrimary">
+        <item name="android:background">@drawable/primary_button</item>
+        <item name="android:drawableTop">@drawable/ic_basket</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
