@@ -13,26 +13,31 @@
         android:theme="@style/Theme.FoodMate"
         tools:targetApi="31">
         <activity
-            android:theme="@style/AppFullScreenTheme"
-            android:name=".feature.auth.InitialActivity"
-            android:exported="true">
+            android:name=".feature.auth.OnBoardingActivity"
+            android:exported="true"
+            android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--=== Authentication Features ===-->
-        <activity
-            android:theme="@style/AppFullScreenTheme"
-            android:name=".feature.auth.RegistrationActivity"
-            android:exported="false" />
-        <activity
-            android:theme="@style/AppFullScreenTheme"
-            android:name=".feature.auth.LoginActivity"
-            android:exported="false" />
 
-        <!--=== Home Features ===-->
+        <!-- === Authentication Features === -->
+        <activity
+            android:name=".feature.auth.InitialActivity"
+            android:exported="false"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".feature.auth.RegistrationActivity"
+            android:exported="false"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".feature.auth.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppFullScreenTheme"/>
+
+        <!-- === Home Features === -->
         <activity
             android:name=".feature.home.HomeActivity"
             android:exported="false" />
