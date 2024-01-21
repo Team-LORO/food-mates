@@ -27,12 +27,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:layout_marginTop="56dp"
-            android:fontFamily="@font/inter_medium"
             android:text="Selamat Datang di FoodMate!"
-            android:textColor="#141414"
-            android:textSize="20sp" />
+            style="@style/Heading1" />
 
         <TextView
             android:layout_width="wrap_content"
